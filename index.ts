@@ -235,3 +235,31 @@ class NewUser4 {
 console.log(NewUser4.getRandomNumber());
 
 // Abstract classes and methods
+// :- Abstract classes are classes that cannot be instantiated and are meant to be inherited by other classes.
+// :- Abstract methods are methods that are declared in an abstract class and are meant to be implemented by the child class.
+
+// Functions
+// :- Functions are blocks of code that can be called multiple times from different parts of the program.
+
+function efgh(name: string, cb: (value: string) => void) {
+  cb("Amit");
+}
+
+efgh("Rohit", (value: string) => {
+  console.log(value);
+});
+
+// Optional and Default Parameters
+// :- Optional parameters are parameters that can be omitted when calling a function.
+// :- Default parameters are parameters that have a default value that can be used if no value is provided.
+
+function ijkl(
+  name: string,
+  age: number,
+  gender: string = "not to be disclosed"
+) {
+  console.log(name, age, gender);
+}
+
+ijkl("Binod", 25, "Male");
+ijkl("Jr. Binod", 22);
